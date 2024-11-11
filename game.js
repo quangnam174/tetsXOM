@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     qrCodeBtn.addEventListener('click', function () {
-        const url = "index.html";
+        const url = "https://quangnam174.github.io/tetsXOM/";
         const qr = qrcode(0, 'L');
         qr.addData(url);
         qr.make();
