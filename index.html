@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Tic-Tac-Toe 100x100</title>
+</head>
+
+<body>
+    <div class="overlay" id="start-overlay">
+        <div class="modal">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+            <div id="qrcode"></div>
+            <button id="generate-qr">Tạo mã QR</button>
+        </div>
+    </div>
+    <div class="header">
+        <div class="timers">
+            <div class="timer" id="x-timer">X: 30s</div>
+            <div class="message" id="message">It's X's turn</div>
+            <div class="timer" id="o-timer">O: 30s</div>
+        </div>
+    </div>
+    <div class="board-container">
+        <div class="board" id="board"></div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <div id="winner-message"></div>
+            <button id="reset-btn">Chơi lại</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+    <!-- <script src="server.js"></script> -->
+</body>
+
+</html>
